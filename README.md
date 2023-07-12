@@ -1,1 +1,1 @@
-# Check smth
+# Check smth info and about Mars
