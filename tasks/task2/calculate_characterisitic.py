@@ -1,5 +1,5 @@
 import statistics as stats
-
+import csv
 # Have 3 types how we can get a data
 # U writes yourself in code
 data_source_1 = [1, 2, 3, 4, 5]
@@ -10,9 +10,13 @@ data_source_1 = [1, 2, 3, 4, 5]
 with open('calculate.txt', encoding='utf-8') as file:
     data_source_3 = [int(value) for value in file.read().split(',')]
 
-# data_source_3 = list(int(value) for value in data_source_3.split())
-print(data_source_3)
+# Read file csv
 
+with open('calculate.csv', newline='') as file:
+    data_source_4 = [int(value) for value in sum(list(csv.reader(file, delimiter=' ')), [])]
+    file.close()
+
+print(data_source_4)
 # for i in range(1, 4):
 #     data = "data_source_" + str(i)
 #     print(f'Find characteristics for Data:\n{data}\nMean - {stats.mean(data)},'
