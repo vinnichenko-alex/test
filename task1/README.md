@@ -1,7 +1,6 @@
 
-# Project Name
+# Task 1
 
-Task 1
 Number Guessing Game
 
 ## Table of Contents
@@ -14,15 +13,14 @@ Number Guessing Game
 
 ## Project Overview
 
-Provide a detailed overview of the project. Explain its purpose, main features, and any other relevant information that would help someone understand what the project is about.
-
+It's project for Alex grew more powerfull
 ## Installation
 
 Describe the installation process step-by-step. Include any prerequisites, dependencies, or configurations that need to be in place before installing the project.
 
 ```bash
-$ git clone https://github.com/username/project.git
-$ cd project
+$ git clone https://github.com/vinnichenko-alex/test.git
+$ cd 'test'
 $ npm install
 ```
 
