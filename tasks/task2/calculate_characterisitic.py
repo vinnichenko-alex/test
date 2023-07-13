@@ -8,14 +8,12 @@ data_source_1 = [1, 2, 3, 4, 5]
 # data_source_2 = [int(value) for value in input('Write nums with separate " " ').split()]
 # Read file txt
 with open('calculate.txt', encoding='utf-8') as file:
-    data_source_4 = file.read()
-    data_source_3 = file.readlines()
-print(type(data_source_3))
-print(type(data_source_4))
+    data_source_3 = [int(value) for value in file.read().split(',')]
+
 # data_source_3 = list(int(value) for value in data_source_3.split())
 print(data_source_3)
 
-print(f'Find characteristics for Data:\n{data_source_1}\nMean - {stats.mean(data_source_1)},'
-      f' median - {stats.median(data_source_1)}, mode - {stats.mode(data_source_1)}')
-# print(f'Find characteristics for Data:\n{data_source_2}\nMean - {stats.mean(data_source_2)},'
-#       f' median - {stats.median(data_source_2)}, mode - {stats.mode(data_source_2)}')
+# for i in range(1, 4):
+#     data = "data_source_" + str(i)
+#     print(f'Find characteristics for Data:\n{data}\nMean - {stats.mean(data)},'
+#           f' median - {stats.median(data)}, mode - {stats.mode(data)}')
